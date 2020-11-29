@@ -11,11 +11,11 @@ def stend(f, *args):
     return delta
 
 
-N = 100000
+N = 40000
 avg_time = []
 for i in range(N):
     avg_time.append(stend(sorted, [random.randint(1, 3000) for i in range(i)]))
-
+    print(i)
 
 plt.ylabel('Time')
 plt.xlabel('Count Element')
